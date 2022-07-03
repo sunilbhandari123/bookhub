@@ -1,5 +1,5 @@
+import 'package:bookhub/firstpage.dart';
 import 'package:flutter/material.dart';
-
 import 'login.dart';
 
 void main() {
@@ -12,16 +12,20 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      
 
     initialRoute: '/',
   routes: {
     // When navigating to the "/" route, build the loginScreen widget.
-    '/': (context) =>  Login(),
+    '/': (context) =>  const Login(),
+    '/login':(context) => firstpage (),
+    '/SKIP' :(context) => const Firstpage(),
     // When navigating to the "/second" route, build the SignupScreen widget.
-
   },
     );
   }
+
+  firstpage() {}
 }
 
 
