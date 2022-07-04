@@ -1,5 +1,14 @@
+import 'package:bookhub/romance.dart';
+import 'package:bookhub/thrillers.dart';
 import 'package:flutter/material.dart';
+import 'adventure.dart';
+import 'childrens.dart';
+import 'essay.dart';
+import 'fantasy.dart';
 import 'fiction.dart';
+import 'health.dart';
+import 'horror.dart';
+import 'Historical.dart';
 
 void main() {
   runApp(const Firstpage());
@@ -56,7 +65,7 @@ class _FirstpageState extends State<Firstpage> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Fiction()));
+                              builder: (context) =>  Fantasy()));
                     }),
                     
               ),
@@ -77,7 +86,7 @@ class _FirstpageState extends State<Firstpage> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Fiction()));
+                              builder: (context) =>  Horror()));
                     }),]),
                     const SizedBox(
                       height: 20,
@@ -102,7 +111,7 @@ class _FirstpageState extends State<Firstpage> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Fiction()));
+                              builder: (context) => Historical()));
                     }),
                     
               ),
@@ -123,7 +132,7 @@ class _FirstpageState extends State<Firstpage> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Fiction()));
+                              builder: (context) =>  Romance()));
                      }),  
             ],
           ),
@@ -150,7 +159,7 @@ class _FirstpageState extends State<Firstpage> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Fiction()));
+                              builder: (context) =>  Thrillers()));
                     }),
                     
               ),
@@ -171,7 +180,7 @@ class _FirstpageState extends State<Firstpage> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Fiction()));
+                              builder: (context) =>  Adventure()));
                      }),  
             ],
           ),
@@ -195,7 +204,7 @@ class _FirstpageState extends State<Firstpage> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Fiction()));
+                              builder: (context) =>  Essay()));
                     }),
                     
               ),
@@ -240,7 +249,7 @@ class _FirstpageState extends State<Firstpage> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Fiction()));
+                              builder: (context) =>  Childrens()));
                     }),
                     
               ),
@@ -261,7 +270,7 @@ class _FirstpageState extends State<Firstpage> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Fiction()));
+                              builder: (context) =>  Health()));
                      }),  
             ],
           ),
@@ -274,3 +283,6 @@ class _FirstpageState extends State<Firstpage> {
     );
   }
 }
+
+
+
