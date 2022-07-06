@@ -1,25 +1,43 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_pdfview/flutter_pdfview.dart';
+import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
+
 void main() {
-  runApp(Fantasy());
+  runApp(const Fantasy());
 }
-class Fantasy extends StatefulWidget {
-  Fantasy({Key? key}) : super(key: key);
+
+class Fantasy extends StatelessWidget {
+  const Fantasy({Key? key}) : super(key: key);
 
   @override
-  State<Fantasy> createState() => _FantasyState();
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Pdf operations',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: HomePage(),
+    );
+  }
 }
 
-class _FantasyState extends State<Fantasy> {
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     backgroundColor:Colors.black,
-      
+      body: Center(
+        child: SfPdfViewer.asset('assets/folder/letsflu.pdf')),
+              
     );
-  
-
-
-
-
-}}
+  }
+}
+//Image(image: AssetImage('assets/nc.png'))),
