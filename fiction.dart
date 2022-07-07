@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 void main() {
   runApp(const Fiction());
 }
@@ -14,7 +15,9 @@ class _FictionState extends State<Fiction> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+     body: Center(
+        child: SfPdfViewer.asset('assets/folder/fiction.pdf')),
+
       
     );
   }

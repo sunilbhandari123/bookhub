@@ -1,5 +1,6 @@
 import 'package:bookhub/firstpage.dart';
 import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 void main() {
   runApp(Historical());
 }
@@ -13,8 +14,9 @@ class Historical extends StatefulWidget {
 class _HistoricalState extends State<Historical> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Colors.black,
+    return  Scaffold(
+      body: Center(
+        child: SfPdfViewer.asset('assets/folder/histo.pdf')),
     );
   }
 }

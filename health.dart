@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 void main() {
   runApp(Health());
@@ -14,8 +15,10 @@ class Health extends StatefulWidget {
 class _HealthState extends State<Health> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Colors.black,
+    return  Scaffold(
+       body: Center(
+        child: SfPdfViewer.asset('assets/folder/health.pdf')),
+
     );
   }
 }

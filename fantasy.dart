@@ -40,4 +40,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-//Image(image: AssetImage('assets/nc.png'))),

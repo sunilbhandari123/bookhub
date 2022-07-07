@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 void main() {
   runApp(Horror());
 }
@@ -12,8 +13,10 @@ class Horror extends StatefulWidget {
 class _HorrorState extends State<Horror> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Colors.black,
+        return Scaffold(
+      body: Center(
+        child: SfPdfViewer.asset('assets/folder/horror.pdf')),
+
     );
   }
 }
